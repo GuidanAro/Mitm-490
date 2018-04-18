@@ -35,7 +35,7 @@ def reARP():  # reset ARP and disable port forwarding
     print("[*] Disabling IP Forwarding...")
     os.system("echo 0 > /proc/sys/net/ipv4/ip_forward")
     print("[*] Shutting Down...")
-    sys.exit(1)
+    exit()
 
 
 def trick(gm, vm):  # replace the gateway IP with our IP
