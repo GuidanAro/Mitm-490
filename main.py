@@ -14,7 +14,7 @@ try:
     os.system("echo 1 > /proc/sys/net/ipv4/ip_forward")
 except Exception:
     # if not super user
-    print("failed to enable port forwarding... Are you root user?")
+    print("failed to enable port forwarding... Are you root user (try running as sudo)?")
     exit()
 
 
